@@ -156,7 +156,7 @@ console.log(bob)
 
 //12. Найдите студента с самым высоким баллом (reduce)
 let bestStudent = newDeepCopyStudent.reduce((acc, st, i) => {
-  if (i !== 1) {
+  if (i !== 1) { // условием исключаем первый объект массива
    return  acc.scores > st.scores ? acc : st
   }else{
     return st
